@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <h1>IP Address Tracker</h1>
+  <div id="ipInput">
+    <input placeholder="Search for any IP Address or domain">
+    <button onclick="get_address()"><img src="./images/icon-arrow.svg" alt="arrow icon"></button>
+  </div>
+
+  <div class="result">
+    <div>
+      <span>IP ADDRESS</span>
+      <h5 class="ip"></h5>
+    </div>
+    <div >
+      <span>LOCATION</span>
+      <h5 class="location_text"></h5>
+    </div>
+    <div>
+      <span>TIMEZONE</span>
+      <h5 class="timezone"></h5>
+    </div>
+    <div>
+      <span>ISP</span>
+      <h5 class="isp"></h5>
+    </div>
+  </div>
+  <div id="map">
+
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rahul Solanki</a>.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./index.js"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&v=weekly"
+  async defer
+></script>
+</body>
+
+ 
+</html>
