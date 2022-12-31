@@ -21,7 +21,6 @@ const get_address= async ()=> {
        }
    });
    let map;
-   const marker="file:/images/icon-location.svg"
 
 const initMap=async ()=> {
   map = await new google.maps.Map(document.getElementById("map"), {
@@ -32,8 +31,7 @@ const initMap=async ()=> {
   new google.maps.Marker({
     position:{lat:lat,lng:lng},
     map,
-    title:"",
-    icon:marker
+    title:""
   })
   
 }
