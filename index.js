@@ -21,7 +21,7 @@ const get_address= async ()=> {
        }
    });
    let map;
-   const marker="file:///D:/challenges/ip-address-tracker-master/images/icon-location.svg"
+   const marker="file:/images/icon-location.svg"
 
 const initMap=async ()=> {
   map = await new google.maps.Map(document.getElementById("map"), {
